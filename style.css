@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "League Spartan";
+}
+main{
+    margin: 5em;
+    display: grid;
+    grid-template-columns: 500px 800px;
+}
+.section-1 h1{
+    padding-right: 1em;
+    font-size: 3.5em;
+    letter-spacing: -1px;
+    word-spacing: -.1em;
+    line-height: .85em;
+    color:   hsl(300, 43%, 22%);
+}
+.section-1 p{
+    font-size: 1.1em;
+    padding: 1.6em 3em 1em 0em;
+    line-height: 1.4em;
+    word-spacing: .07em;
+    color:  hsl(303, 10%, 53%);
+}
+.section-2{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 1.3em 12em 1.3em 4.5em;
+    justify-items: start;
+    align-items: start;
+}
+.rate{
+    width:440px;
+    font-size: 1.2em;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1em 1.5em;
+    margin: .25em 0em 0em;
+    border-radius: .5em;
+}
+.star{
+    vertical-align: bottom;
+    margin-right:.2em ;
+}
+.section-2 span{
+    margin-left: 1.2em;
+    font-size: .9em;
+    color:hsl(300, 43%, 22%) ;
+    font-weight: bold;
+}
+.section-2 .rate:nth-child(2){
+    justify-self: center;
+   
+}
+.section-2 .rate:nth-child(3){
+    justify-self: end;
+   
+}
+.section-3{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 30px;
+    grid-column: span 2;
+    margin: 3.35em 0em;
+    align-items: start;
+    height: 270px;
+}
+.comment{
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: .5em;
+    padding: 2.2em 1.4em 2.3em 1.9em;
+    font-size: 1.1em;
+}
+.comment-text{
+    line-height: 1.25em;
+    word-spacing: -.1em;
+}
+.person{
+    display: flex;
+    align-items: center;
+    margin: 0em 0em 1.5em;
+}
+.person img{
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 1.25em;
+}
+.person p{
+    margin: .2em 0em ;
+}
+#Irene-comment{
+    align-self: center;
+}
+#Anne-comment{
+    align-self: end;
+    margin-bottom : .1em ;
+}
+.verified-buyer{
+    color: hsl(333, 80%, 67%);
+}
+@media screen and (max-width:800px) {
+    main{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .section-3{
+        grid-template-columns: 450px;
+        row-gap: 20px;
+        grid-column: span 1;
+        justify-content: center;
+
+
+    }
+    .section-1{
+        text-align: center;
+        max-width: 450px;
+    }
+    .section-2{
+        padding: 0em;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .rate{
+        margin-bottom: .5em;
+        max-width: 400px;
+        text-align: center;
+    }
+    .rate span{
+        display: block;
+        margin: 1em 0em 0em;
+    }
+    .rate 
+    .section-2 .rate:nth-child(2){
+        justify-self: center;
+       
+    }
+    .section-2 .rate:nth-child(3){
+        justify-self: center;
+       
+    }
+ 
+}
